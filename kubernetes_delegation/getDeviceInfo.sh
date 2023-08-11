@@ -99,7 +99,7 @@ while IFS= read -r line; do
         #        fi
         #        latency+="\"$otherNodeName\":$latencyTemp,"
         #    done <<< "$podsOfOtherNode"
-        fi
+        #fi
         latency=${latency%,}
         latency+="}"
     elif (( count % 4 == 1 )); then
